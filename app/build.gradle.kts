@@ -76,7 +76,7 @@ android {
 
 
     signingConfigs {
-        create("keyStore") {
+        create(projectDir.path + "/keystore/androidkey.jks") {
             keyAlias = "key0"
             keyPassword = "123456"
             storeFile = file("keytest.jks")
